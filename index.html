@@ -6,8 +6,14 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<style>
 		body{ background-color: #F5EDDB; }
+		.description img{ max-height: 300px; }
 		.header{ height: 50vh; background-color: #524FDF; }
 		.icon{ width: 50px; height: 50px }
+
+		@media( max-width: 480px )
+		{
+			.description{ flex-wrap: wrap; }
+		}
 	</style>
 </head>
 <body>
@@ -16,14 +22,14 @@
 		<h5 class="text-center text-white">TAKE IT EASY TO WORK HARD</h5>
 	</header>
 
-	<section class="p-5 d-flex justify-content-between">
-		<div class="w-75">
+	<section class="p-5 d-flex justify-content-between description">
+		<div>
 			<div class="d-flex justify-content-start align-items-center">
 				<p class="mr-2 text-secondary">AGES 14+</p>
 				<p class="mr-2 text-secondary">4-6 PLAYERS</p>
 				<p class="mr-2 text-secondary">30-40 MINS TO PLAY</p>
 			</div>
-			<p class="mr-2">
+			<p>
 				Better school life is a fast-paced campus experience game in 
 				which multi-players will act as school students to finish a 
 				whole semester. Players need to find the balance between study 
@@ -33,8 +39,8 @@
 				the midterm and final.
 			</p>
 		</div>
-		<div class="w-25 ml-2">
-			<img class="w-100" src="./box.png" alt="box">
+		<div>
+			<img src="./box.png" alt="box">
 		</div>
 	</section>
 
